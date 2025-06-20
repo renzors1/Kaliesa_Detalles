@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Favicon.png" type="image/png">
     <title>Kaliesa Detalles</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Título de la página -->
     <header align="center">
         <h1>Kaliesa</h1>
         <p>Cada detalle, un recuerdo inolvidable</p>
+         <!-- Botones de secciones -->
+        <nav align="center">
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#ocasiones">Ocasiones</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#arma_tu_box">Arma tu box</a>
+        </nav>
     </header>
 
-    <!-- Botones de secciones -->
-    <nav align="center">
-        <a href="#inicio">Inicio</a>
-        <a href="#catalogo">Catálogo</a>
-        <a href="#ocasiones">Ocasiones</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#arma_tu_box">Arma tu box</a>
-    </nav>
+   
 
     <!-- Cuerpo principal -->
     <main>
@@ -37,6 +39,7 @@
         <section id="catalogo" align="center">
             <h2>Busca tu producto</h2>
                 <input type="text" id="busqueda" placeholder="Escribe el nombre del producto">
+                <button id="buscar">Buscar</button>
             <h2>Catálogo</h2>
             <div class="catalogo">
                 <div class="producto">
@@ -87,18 +90,18 @@
         <!-- Sección de testimonios -->
         <section id="testimonios" align="center">
             <h2>Nuestros clientes nos prefieren</h2>
-            <div class="testimonio">
+            <article class="testimonio">
                 <p>El box de peluche más rosas que encargué superó mis expectativas.</p>
                 <p>— Rosa García ⭐⭐⭐⭐⭐</p>
-            </div>
-            <div class="testimonio">
+            </article>
+            <article  class="testimonio">
                 <p>Las rosas eternas tenían muy buen acabado, a mi madre le gustaron mucho. 100% recomendado.</p>
                 <p>— Luisa Martínez ⭐⭐⭐⭐⭐</p>
-            </div>
-            <div class="testimonio">
+            </article>
+            <article  class="testimonio">
                 <p>El cuadro personalizado que pedí se ve como esperaba, llegó a tiempo y bien protegido.</p>
                 <p>— Camila Rojas ⭐⭐⭐⭐⭐</p>
-            </div>
+            </article>
             <h2>Escribe tu testimonio tú también</h2>
             <form>
                 <textarea name="reseña" rows="4" cols="60" placeholder="Escribe aquí tu experiencia..."></textarea>
