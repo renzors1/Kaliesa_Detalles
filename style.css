@@ -1,20 +1,29 @@
 /* Estilo general */
+body,
+h1, h2, h3, h4, h5, h6,
+.navbar, .nav-link,
+.btn, button,
+input, textarea {
+    font-family: 'Lora', sans-serif !important;
+}
+
 html {
     height: 100%;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    margin-top: 100px;
+    
+    margin-top: 0px;
     padding: 0;
     color: #333;
     line-height: 1.6;
     width: 100%; height: 100%;
 }
 
+
 header {
     background-color: #fff2eb;
-    padding: 10px 0 0 0; 
+    padding: 0px 0 0 0; 
     margin-bottom: 30px;
     position: fixed;  
     top: 0;           
@@ -23,33 +32,25 @@ header {
     z-index: 1000;    
     box-shadow: 0 2px 5px #0000001a;
     img {width: 180px; height: 50px; }
+    .menu-navegacion .nav-link
+    {
+    color: #be9569 ;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: all 0.3s ease;}
+    .menu-navegacion .nav-link:hover 
+    {
+    color: #9e7e5c ;
+    transform: translateY(-2px);}
+    .menu-navegacion .navbar-toggler 
+    {
+    border-color: #cba983 }
+    
 }   
-main { padding-top: 30px;} /* Para separar el contenido del header */
+main { padding-top: 100px;} /* Para separar el contenido del header */
     
 
-/* Navegación */
-nav {
-    margin: 0 ;
-    background-color: #c49a6c;
-    padding:0px 0;
-    display: flex;
-    justify-content: center;
-}
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    justify-content: center;
-}
-
-nav a:hover {
-    background-color: #f4dfc8ac;
-} 
 
 /* Secciones */
 section {
@@ -70,7 +71,7 @@ section {
         }
 #inicio h2 {
     font-size: 1.8rem;  
-    margin-bottom: -10px;
+    margin-bottom: 0px;
     margin-top: 0
 }
 
@@ -111,7 +112,7 @@ button {
     color: white;
     border: none;
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 5px ;
     cursor: pointer;
     transition: background-color 0.3s;
 }
