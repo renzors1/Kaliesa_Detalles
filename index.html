@@ -17,45 +17,57 @@
     <!-- Título de la página -->
     <header >
         <!--Barra de navegación-->
-        <nav class="navbar navbar-expand-lg menu-navegacion">
-        <div class="container">
-            <!-- Logo centrado -->
-            <a class="navbar-brand mx-auto" href="#inicio">
-                <img src="kaliesa nombre.jpg" alt="Logo de Kaliesa" height="50">
-            </a>
-            
-            
-            <!-- Botón para móviles -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKaliesa" 
-                aria-controls="navbarKaliesa" aria-expanded="false" aria-label="Alternar navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- Menú de navegación -->
-            <div class="collapse navbar-collapse" id="navbarKaliesa">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#catalogo">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonios">Testimonios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ocasiones">Ocasiones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#arma_tu_box">Arma tu box</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      <nav class="navbar navbar-expand-lg menu-navegacion">
+  <div class="container">
+
+    <!-- Fila con carrito (izquierda), logo (centro), menú hamburguesa (derecha) -->
+    <div class="d-flex justify-content-between align-items-center w-100">
+      
+      <!-- Carrito para celular -->
+      <a href="#carrito" class="d-lg-none nav-link" style="width: 40px;">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+      </a>
+
+      <!-- Logo centrado -->
+      <a class="navbar-brand mx-auto" href="#inicio">
+        <img src="kaliesa nombre.jpg" alt="Logo de Kaliesa" height="50">
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKaliesa"
+        aria-controls="navbarKaliesa" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Barra de búsqueda (siempre visible) -->
+    <div class="w-100 my-2" style="max-width: 500px; margin-left: auto; margin-right: auto;">
+      <form class="d-flex w-100" role="search">
+        <input class="form-control rounded-pill me-2" type="search" placeholder="Buscar ..." aria-label="Buscar">
+        <button class="btn btn-outline-secondary rounded-pill" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Menú desplegable -->
+    <div class="collapse navbar-collapse" id="navbarKaliesa">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ocasiones">Ocasiones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#arma_tu_box">Crea</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+
+      <!-- Carrito para computadora -->
+      <a href="#carrito" class="d-none d-lg-block nav-link ms-3">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</nav>
     </header>
 
    
@@ -72,9 +84,7 @@
 
         <!-- Sección del catálogo -->
         <section id="catalogo" align="center">
-            <h2>Busca tu producto</h2>
-                <input type="text" id="busqueda" placeholder="Escribe el nombre del producto">
-                <button id="buscar">Buscar</button>
+         
             <h2>Catálogo</h2>
             <div class="catalogo">
                 <div class="producto">
