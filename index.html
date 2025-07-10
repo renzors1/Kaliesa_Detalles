@@ -17,30 +17,30 @@
     <!-- Título de la página -->
     <header >
         <!--Barra de navegación-->
-      <nav class="navbar navbar-expand-lg menu-navegacion">
+    <nav class="navbar navbar-expand-lg menu-navegacion">
   <div class="container">
 
-    <!-- Fila con carrito (izquierda), logo (centro), menú hamburguesa (derecha) -->
+    <!-- Fila con botón menú (izq), logo (centro), carrito (der) -->
     <div class="d-flex justify-content-between align-items-center w-100">
       
-      <!-- Carrito para celular -->
-      <a href="#carrito" class="d-lg-none nav-link" style="width: 40px;">
-        <i class="fas fa-shopping-cart fa-lg"></i>
-      </a>
-
-      <!-- Logo centrado -->
-      <a class="navbar-brand mx-auto" href="#inicio">
-        <img src="kaliesa nombre.jpg" alt="Logo de Kaliesa" height="50">
-      </a>
-
-      <!-- Botón hamburguesa -->
+      <!-- ☰ Botón hamburguesa a la izquierda -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKaliesa"
         aria-controls="navbarKaliesa" aria-expanded="false" aria-label="Alternar navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!--  Logo centrado -->
+      <a class="navbar-brand mx-auto" href="#inicio">
+        <img src="kaliesa nombre.jpg" alt="Logo de Kaliesa" height="50">
+      </a>
+
+      <!-- 🛒 Carrito a la derecha (solo en móviles) -->
+      <a href="#carrito" class="d-lg-none nav-link" style="width: 40px;">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+      </a>
     </div>
 
-    <!-- Barra de búsqueda (siempre visible) -->
+    <!--  Barra de búsqueda (siempre visible) -->
     <div class="w-100 my-2" style="max-width: 500px; margin-left: auto; margin-right: auto;">
       <form class="d-flex w-100" role="search">
         <input class="form-control rounded-pill me-2" type="search" placeholder="Buscar ..." aria-label="Buscar">
@@ -50,7 +50,7 @@
       </form>
     </div>
 
-    <!-- Menú desplegable -->
+    <!--  Menú desplegable -->
     <div class="collapse navbar-collapse" id="navbarKaliesa">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
@@ -61,7 +61,7 @@
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
 
-      <!-- Carrito para computadora -->
+      <!--  Carrito para escritorio (solo visible en pantallas grandes) -->
       <a href="#carrito" class="d-none d-lg-block nav-link ms-3">
         <i class="fas fa-shopping-cart fa-lg"></i>
       </a>
