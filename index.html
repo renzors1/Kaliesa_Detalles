@@ -17,57 +17,53 @@
     <!-- Título de la página -->
     <header >
         <!--Barra de navegación-->
-    <nav class="navbar navbar-expand-lg menu-navegacion">
-  <div class="container">
+      <nav class="navbar navbar-expand-lg menu-navegacion">
+            <div class="container">
 
-    <!-- Fila con botón menú (izq), logo (centro), carrito (der) -->
-    <div class="d-flex justify-content-between align-items-center w-100">
-      
-      <!-- ☰ Botón hamburguesa a la izquierda -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKaliesa"
-        aria-controls="navbarKaliesa" aria-expanded="false" aria-label="Alternar navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                <!--  Alineacion de fila con botón menú (izq), logo (centro), carrito (der) para celular-->
+                <div class="d-flex justify-content-between align-items-center w-100">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKaliesa"
+                    aria-controls="navbarKaliesa" aria-expanded="false" aria-label="Alternar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-      <!--  Logo centrado -->
-      <a class="navbar-brand mx-auto" href="#inicio">
-        <img src="kaliesa nombre.jpg" alt="Logo de Kaliesa" height="50">
-      </a>
+                <a class="navbar-brand mx-auto" href="#inicio">
+                    <img src="kaliesa nombre.jpg" alt="Logo de Kaliesa" height="50">
+                </a>
+                <a href="#carrito" class="d-lg-none nav-link" style="width: 40px;">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                </a>
+                </div>
 
-      <!-- 🛒 Carrito a la derecha (solo en móviles) -->
-      <a href="#carrito" class="d-lg-none nav-link" style="width: 40px;">
-        <i class="fas fa-shopping-cart fa-lg"></i>
-      </a>
-    </div>
+                <!-- Barra de búsqueda  -->
+                <div class="w-100 my-2 barra-busqueda">
+                <form class="d-flex w-100" role="search">
+                    <input class="form-control rounded-pill me-2" type="search" placeholder="Buscar ..." aria-label="Buscar">
+                    <button class="btn btn-outline-secondary rounded-pill boton-busqueda" type="submit">
+                    <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                </div>
 
-    <!--  Barra de búsqueda (siempre visible) -->
-    <div class="w-100 my-2" style="max-width: 500px; margin-left: auto; margin-right: auto;">
-      <form class="d-flex w-100" role="search">
-        <input class="form-control rounded-pill me-2" type="search" placeholder="Buscar ..." aria-label="Buscar">
-        <button class="btn btn-outline-secondary rounded-pill" type="submit">
-          <i class="fas fa-search"></i>
-        </button>
-      </form>
-    </div>
+                <!-- Menú desplegable para celular -->
+                <div class="collapse navbar-collapse " id="navbarKaliesa">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ocasiones">Ocasiones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#arma_tu_box">Crea</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
 
-    <!--  Menú desplegable -->
-    <div class="collapse navbar-collapse" id="navbarKaliesa">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
-        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#ocasiones">Ocasiones</a></li>
-        <li class="nav-item"><a class="nav-link" href="#arma_tu_box">Crea</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-      </ul>
-
-      <!--  Carrito para escritorio (solo visible en pantallas grandes) -->
-      <a href="#carrito" class="d-none d-lg-block nav-link ms-3">
-        <i class="fas fa-shopping-cart fa-lg"></i>
-      </a>
-    </div>
-  </div>
-</nav>
+                <!-- Carrito para computadora, derecha -->
+                <a href="#carrito" class="d-none d-lg-block nav-link ms-3">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                </a>
+                </div>
+            </div>
+        </nav>
     </header>
 
    
