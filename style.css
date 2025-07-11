@@ -90,7 +90,7 @@ section {
 #inicio h2 {
     font-size: 1.8rem;  
     margin-bottom: 0px;
-    margin-top: 40
+    margin-top: 40 
 }
 
 #inicio p {
@@ -98,6 +98,9 @@ section {
     margin-bottom: 10px;
 }
 /* Catálogo de productos */
+#catalogo h2 {
+    margin-top: 35px;
+}
 .catalogo, .arma_tu_box {
     display: flex;
     flex-wrap: wrap;
@@ -211,5 +214,7 @@ footer {
        font-size: 0.9rem; 
 }
 
+
+    
 
     
